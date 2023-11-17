@@ -1,0 +1,23 @@
+.Parent_Style {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Parent_Style td,
+.Parent_Style th {
+  text-align: left;
+  padding: 1rem 0.85rem;
+  border-top: 0.06rem solid var(--table-border);
+  vertical-align: center;
+  font-size: 0.875rem;
+}
+.Parent_Style th {
+  background-color: var(--sidebar-bg);
+  color: var(--darkGreen);
+  font-weight: 500;
+}
+.Parent_Style td {
+  color: #4B664C;
+}
+.Parent_Style tbody tr:nth-child(even) {
+  background-color: var(--sidebar-bg);
+}/*# sourceMappingURL=Table.css.map */

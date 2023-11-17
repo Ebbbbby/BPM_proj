@@ -1,0 +1,107 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+
+  &_text {
+    font-size: 32px;
+    line-height: 40px;
+    color: #4B664C;
+  }
+  &_btns {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+      justify-content: flex-end;
+    }
+    div {
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.table {
+  width: 100%;
+  overflow-x: scroll;
+}
+.action_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  div:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+.ghead {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--grayscale-line);
+  &_main {
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--grayscale-body);
+    font-weight: 400;
+  }
+  &_text {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grayscale-body);
+  }
+}
+.gform {
+  display: flex;
+  padding: 25px 0;
+  max-width: 1200px;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+  &_info {
+    color: var(--grayscale-ash);
+    font-weight: 500;
+    min-width: 200px;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+  }
+  &_form{
+    max-width: 400px;
+    margin: 0 auto;
+    &_container {
+      width: 100%;
+    }
+  }
+}
+
+.grpPerm_form_head {
+  font-size: 32px;
+  line-height: 40px;
+  color: #4B664C;
+  text-align: center;
+  margin-bottom: 32px;
+
+}
+.vpg {
+  &_btns {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0 20px;
+  }
+  &_items {
+    display: flex;
+   
+    justify-content: space-between;
+  }
+  &_item {
+    display: flex;
+     gap: 1rem;
+    &_text {
+      font-weight: 500;
+    }
+  }
+}
+.add_perm_form {
+  min-width: 300px;
+}

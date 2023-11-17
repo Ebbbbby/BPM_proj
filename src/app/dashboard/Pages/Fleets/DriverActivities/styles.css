@@ -1,0 +1,76 @@
+.react-datepicker__input-container input {
+  color: var(--form_input);
+  background-color: #f8fbf8;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--table-border);
+  padding: 0.7rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.calendarIcon {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  margin-bottom: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.6rem;
+  color: #4b664c;
+  margin-top: 0.8rem;
+}
+
+.react-datepicker__day--selected {
+  background-color: var(--primary-color);
+  color: #fff;
+
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+
+  border-radius: 50%;
+}
+.icon_wrapper button{
+  padding: .5rem;
+  background-color: transparent;
+  align-items: center;
+  display: inline;
+}
+.month_container{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+.back_border{
+  border: 1px solid grey;
+  background-color: red;
+}
+.grouped_items{
+  display: flex;
+  
+  align-items: center;
+  background-color: transparent;
+  ;
+
+
+}
+.chev_btns button{
+ background: transparent;
+  margin: .50rem;
+
+}
+.selected_month{
+  margin-right: 1rem; 
+  color: var(--primary-color);
+  font-weight: 500;
+}

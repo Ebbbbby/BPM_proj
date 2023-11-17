@@ -1,0 +1,127 @@
+.Search {
+  display: flex;
+  align-items: center;
+  // width: max-content;
+  gap: 0.6rem;
+  border: 1px solid var(--table-border);
+  padding: 0.7rem 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #f8fbf8;
+
+  * {
+    color: #4b664c;
+  }
+
+  .Icon {
+    font-size: 1.2rem;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #4b664c;
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--form_input);
+    }
+  }
+}
+
+.Search_Select {
+  position: relative;
+  overflow-x: unset;
+  // max-width: 110px;
+  select {
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--form_input);
+    background-color: transparent;
+  }
+  * {
+    color: var(--form_input);
+  }
+
+  .Search_Menu {
+    position: absolute;
+    top: 2.7rem;
+    left: 0rem;
+    z-index: 10000;
+    overflow-x: unset;
+    background-color: var(--white);
+    padding: 0.75rem;
+    border: 1px solid #d8dce9;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+
+    * {
+      font-size: 0.9rem;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Search {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .Search_Select {
+    position: relative;
+    overflow-x: unset;
+    max-width: unset;
+    select {
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  /* Switch to dark colors for dark themes */
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  /* Outline border for focused elements */
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  /* Outline border for focused and selected elements */
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.date_filter {
+  position: relative;
+}
+
+.date_filter_picker {
+  position: absolute;
+  z-index: 999;
+  background-color: #f8fbf8;
+
+  // .my-selected {
+  //   background-color: pink;
+  // }
+}
+
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+  background-color: pink !important;
+}

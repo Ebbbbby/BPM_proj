@@ -1,0 +1,38 @@
+.form{
+ background-color: #fff;
+
+}
+.input_field{
+  width: 100%;
+  padding: .9rem .4rem;
+  background-color: var(--greenStep_One);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--greenStep_Two);
+  border-radius: .5rem;
+  margin-bottom: .9rem;  
+
+}
+.input_options{
+margin-top: .5rem;
+  width: 400px;
+  padding: .9rem .4rem; 
+  outline: none; 
+  border: none;
+  background-color: var(--greenStep_One);
+  border-radius: .5rem;
+
+}
+.trash_icon{
+    
+    color: var(--greenStep_Two);
+    
+}
+button{
+    background-color: transparent;
+    margin-left: 10px;
+
+}
+ul li{
+  list-style-type: none;
+}

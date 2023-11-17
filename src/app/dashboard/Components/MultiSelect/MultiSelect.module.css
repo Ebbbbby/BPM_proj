@@ -1,0 +1,94 @@
+.input_field {
+  padding: 0.9rem;
+  border: 1px solid #d9e9da;
+  outline: none;
+  background-color: var(--greenStep_One);
+  border-radius: 0.5rem;
+  color: var(--form_input);
+  font-weight: 500;
+  height: 2.9rem;
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+.input_field::-moz-placeholder {
+  color: var(--form_input);
+}
+.input_field::placeholder {
+  color: var(--form_input);
+}
+
+.select {
+  position: relative;
+  margin: 0.4rem 0rem 0rem 0rem;
+}
+.select label {
+  color: var(--form_title);
+  font-weight: 400;
+}
+
+.select_options {
+  position: absolute;
+  background-color: white;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 16px 30px rgba(92, 92, 92, 0.16);
+  border-radius: 8px;
+}
+
+.select_choices {
+  position: absolute;
+  left: 1rem;
+  top: 2.5rem;
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+}
+.select_choices button {
+  border: 1px solid #d9e9da;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.325rem 0.65rem;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.select_choices button * {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+.select_choices button p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.select_choices ._count {
+  background-color: var(--primary-color);
+}
+.select_choices ._count * {
+  color: #fff;
+}
+
+.inputs_checkbox_groupsx {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.inputs_checkbox_groupsx > div {
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+.inputs_checkbox_groups {
+  background: #ffffff;
+  /* Drop Shadow customzed */
+  box-shadow: 0px 16px 30px rgba(92, 92, 92, 0.16);
+}
+.inputs_checkbox_groups::after {
+  height: 0px;
+}
+
+.inputs_group_no_grid {
+  position: absolute;
+  z-index: 99999;
+}/*# sourceMappingURL=MultiSelect.module.css.map */

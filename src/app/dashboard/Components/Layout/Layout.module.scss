@@ -1,0 +1,55 @@
+.Route_Layout_Nav {
+  background-color: var(--off-white);
+  padding: 1rem;
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+}
+
+.Route_Layout_Body {
+  width: 100%;
+  background-color: var(--dashboard-color);
+  padding: 1.5rem;
+  overflow-x: scroll;
+  height: calc(100vh - 120px);
+  @media screen and (max-width: 768px) {
+    padding: 0.9rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0.25rem;
+  }
+}
+
+.Route_Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.Route_Page_Layout_Body {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border: 0.063rem solid #d9dfe9;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  @media screen and (max-width: 480px) {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+.Route_Page_Title {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.Route_Page_Support {
+  font-size: 1rem;
+  color: #4b664c;
+  font-weight: 400;
+}

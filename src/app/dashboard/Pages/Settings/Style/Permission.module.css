@@ -1,0 +1,114 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .head {
+    display: block;
+  }
+}
+.head_text {
+  font-size: 32px;
+  line-height: 40px;
+  color: #4B664C;
+}
+.head_btns {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .head_btns {
+    justify-content: flex-end;
+  }
+}
+.head_btns div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.table {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.action_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.action_btns div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.ghead {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--grayscale-line);
+}
+.ghead_main {
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--grayscale-body);
+  font-weight: 400;
+}
+.ghead_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grayscale-body);
+}
+
+.gform {
+  display: flex;
+  padding: 25px 0;
+  max-width: 1200px;
+}
+@media screen and (max-width: 1024px) {
+  .gform {
+    display: block;
+  }
+}
+.gform_info {
+  color: var(--grayscale-ash);
+  font-weight: 500;
+  min-width: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .gform_info {
+    margin-bottom: 20px;
+  }
+}
+.gform_form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.gform_form_container {
+  width: 100%;
+}
+
+.grpPerm_form_head {
+  font-size: 32px;
+  line-height: 40px;
+  color: #4B664C;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.vpg_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 0 20px;
+}
+.vpg_items {
+  display: flex;
+  justify-content: space-between;
+}
+.vpg_item {
+  display: flex;
+  gap: 1rem;
+}
+.vpg_item_text {
+  font-weight: 500;
+}
+
+.add_perm_form {
+  min-width: 300px;
+}/*# sourceMappingURL=Permission.module.css.map */

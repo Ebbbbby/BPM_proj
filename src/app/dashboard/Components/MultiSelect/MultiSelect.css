@@ -1,0 +1,15 @@
+.input_field {
+  padding: 0.9rem;
+  border: 1px solid #d9e9da;
+  outline: none;
+  background-color: var(--greenStep_One);
+  border-radius: 0.5rem;
+  color: var(--form_input);
+  font-weight: 500;
+}
+.input_field::-moz-placeholder {
+  color: var(--form_input);
+}
+.input_field::placeholder {
+  color: var(--form_input);
+}/*# sourceMappingURL=MultiSelect.css.map */

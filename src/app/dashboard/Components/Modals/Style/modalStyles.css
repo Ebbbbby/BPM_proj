@@ -1,0 +1,46 @@
+.delete-setup {
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal__text {
+  padding: 20px 0 32px;
+}
+.modal__text--head {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--grayscale-off-black);
+  margin-bottom: 8px;
+}
+.modal__text--main {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grayscale-body);
+}
+.modal__text__actions {
+  display: flex;
+  justify-content: center;
+}
+.modal__text__actions .btn-danger {
+  background: #d92d20;
+}
+
+.btn:not(:last-child) {
+  margin-right: 12px;
+}
+
+.setup-process {
+  max-width: 400px;
+  text-align: center;
+}
+.setup-process .modal__image {
+  width: 147px;
+  height: 147px;
+}
+.setup-process .modal__text--head {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--grayscale-body);
+  margin-bottom: 40px;
+}/*# sourceMappingURL=modalStyles.css.map */

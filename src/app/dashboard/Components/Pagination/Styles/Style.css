@@ -1,0 +1,30 @@
+.pagination-holder {
+  display: flex;
+  max-width: 150px;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pagination-movement,
+.pagination-movement_active {
+  background-color: #f7f6fd;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.pagination-movement_active {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.pagination-controls {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.gen-table {
+  border: 1px solid #e0e7ed;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}/*# sourceMappingURL=Style.css.map */

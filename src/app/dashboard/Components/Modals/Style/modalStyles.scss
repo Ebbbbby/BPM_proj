@@ -1,0 +1,51 @@
+.delete-setup {
+  text-align: center;
+  max-width: 400px;
+}
+.modal {
+  &__text {
+    padding: 20px 0 32px;
+    &--head {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+      color: var(--grayscale-off-black);
+      margin-bottom: 8px;
+    }
+    &--main {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--grayscale-body);
+    }
+    &__actions {
+      display: flex;
+      justify-content: center;
+      .btn-danger {
+        background: #d92d20;
+      }
+    }
+  }
+}
+.btn:not(:last-child) {
+  margin-right: 12px;
+}
+.setup-process {
+  max-width: 400px;
+  text-align: center;
+  .modal {
+    &__image {
+      width: 147px;
+      height: 147px;
+    }
+    &__text {
+      &--head {
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--grayscale-body);
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+

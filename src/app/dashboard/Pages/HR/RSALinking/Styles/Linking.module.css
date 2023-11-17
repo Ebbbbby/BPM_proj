@@ -1,0 +1,12 @@
+.Hero_Img{
+    background: linear-gradient(rgba(250, 252, 250, 0.935), rgba(237, 237, 237, 0.84)), url("../../../../../auth/components/img/side-pix.svg");
+    /* position: relative; */
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,255 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head_underline {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E4E7EC;
+}
+.head_text {
+  font-size: 32px;
+  line-height: 40px;
+  color: #4B664C;
+}
+@media screen and (max-width: 480px) {
+  .head_text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.head_text_sub {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grayscale-body);
+}
+.head_btns {
+  display: flex;
+  align-items: center;
+}
+.head_btns div:not(:last-child) {
+  margin-right: 20px;
+}
+.head_btns_flex {
+  display: flex;
+  align-items: center;
+}
+.head_btns_flex svg {
+  margin-left: 5px;
+}
+.head_btns_status {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #29382A;
+  padding: 9px 24px;
+  border: 1px solid #D9E9DA;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.report_filters {
+  display: flex;
+  align-items: flex-end;
+  margin: 0.35rem 0 1.5rem 0;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.report_filters label {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.report_filters > div {
+  flex: 1 1 auto;
+  max-width: 200px;
+}
+.report_filters_button {
+  display: flex;
+  white-space: pre;
+  width: auto;
+  align-items: center;
+}
+.report_filters_button svg {
+  margin-right: 10px;
+}
+
+.no_report {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.no_report_container {
+  height: 500px;
+  position: relative;
+}
+.no_report p {
+  margin-top: 24px;
+  color: #4B664C;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.config_details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 24px;
+  margin: 20px 0;
+}
+.config_details_items {
+  width: 100%;
+}
+.config_details_alt {
+  border: 1px solid #D9E9DA;
+  border-radius: 8px;
+  background: #F8FBF8;
+}
+.config_details_head {
+  margin-top: 30px;
+  font-weight: 500;
+  color: #29382A;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+.info {
+  width: 100%;
+}
+.info_row {
+  width: 100%;
+  box-sizing: border-box;
+}
+.info_row:not(:last-child) {
+  border-bottom: 1px solid #D9E9DA;
+}
+.info_group {
+  margin: 24px 0 16px;
+}
+.info_group_label {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6E9170;
+  margin-bottom: 4px;
+}
+.info_group_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #29382A;
+}
+
+.scheduler {
+  width: 100%;
+  max-width: 751px;
+  margin: 48px auto;
+  color: var(--grayscale-body);
+}
+.scheduler_frequency {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid #D9E9DA;
+}
+.scheduler_frequency div {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.scheduler_frequency div input {
+  padding-left: 10px;
+}
+.scheduler_actions {
+  border-top: 1px solid var(--grayscale-line);
+  padding-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.scheduler_actions div:not(:last-child) {
+  margin-right: 20px;
+}
+.scheduler_actions button {
+  white-space: pre;
+  width: auto;
+}
+
+.form_headline {
+  padding: 24px 0;
+}
+.form_input_icon {
+  margin-top: 5px;
+  font-size: 24px;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.add {
+  display: flex;
+  max-width: 1200px;
+  padding: 25px 0;
+}
+@media screen and (max-width: 1024px) {
+  .add {
+    display: block;
+  }
+}
+.add_head {
+  min-width: 200px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .add_head {
+    width: 100%;
+  }
+}
+.add_head h4 {
+  font-weight: 500;
+  color: var(--grayscale-ash);
+}
+.add_head div {
+  color: var(--grayscale-body);
+}
+.add_form {
+  width: 100%;
+  margin-left: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .add_form {
+    margin: 40px 0 0;
+  }
+}
+.add_action_btns {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  border-top: 1px solid var(--grayscale-line);
+  padding-top: 30px;
+}
+.add_action_btns div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.loading_container {
+  position: relative;
+}
+.loading_container .loading_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 9999;
+}
+.loading_container .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=Reports.module.css.map */

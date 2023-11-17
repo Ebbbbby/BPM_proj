@@ -1,0 +1,1 @@
+``React Redux goes in this folder``

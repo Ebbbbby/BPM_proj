@@ -1,0 +1,395 @@
+  .App {
+  text-align: center;
+}
+
+.form {
+
+
+  &__label {
+    display: block;
+    color: var(--grayscale-label);
+  }
+  &__group {
+    margin-bottom: 16px;
+  }
+  &__input, &__select, .rdt > .form-control {
+    padding: 16px 20px;
+    background: var(--dashboard-bg);
+    border: 1px solid var(--grayscale-line);
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+    &::placeholder {
+      color: var(--grayscale-placeholder);
+    }
+    &.prepend {
+      padding-left: 48px;
+    }
+    &--group {
+      position: relative;
+
+    }
+    &:focus, &:hover {
+      border: 1px solid var(--primary-dark);
+      outline: none
+    }
+  }
+  &__select {
+
+  }
+  &__input {
+    &--group {
+      .prepend__input, .append__input {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--grayscale-placeholder);
+        z-index: 1;
+      }
+
+      .prepend__input {
+        left: 16px;
+      }
+
+      .append__input {
+        right: 16px;
+      }
+    }
+  }
+
+  .rdt > .form-control {
+    padding-left: 50px;
+    svg {
+
+    }
+  }
+  &__file-uploader {
+    width: 100%;
+    color: var(--grayscale-label);
+    background: var(--grayscale-bg);
+    border: 3px dashed var(--grayscale-line);
+    border-radius: 6px;
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &.active {
+      background: var(--grayscale-label);
+      color: var(--white-text);
+
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    .form__group {
+      width: 47.5%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+
+  [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--primary);
+    border-radius: 100%;
+    background: var(--primary);
+  }
+
+  [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--grayscale-line);
+    border-radius: 100%;
+    background: var(--grayscale-line);
+  }
+
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--white-text);
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+}
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: var(--grayscale-line);
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: var(--primary);
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: var(--primary);
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+.color-red {
+  color: var(--danger);
+}
+
+@mixin respond($breakpoint) {
+  //tablets in potriate mode && phones in landscape
+  @if $breakpoint == tab-port {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  //tablets in  landscape mode
+  @if $breakpoint == tab-land {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  //Normal sized desktops
+  @if $breakpoint == desktop {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  //Big desktops
+  @if $breakpoint == big-desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+  .react-select__control {
+    padding: 16px 10px;
+    background: var(--dashboard-bg) !important;
+    border: 1px solid var(--grayscale-line);
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+    &:focus, &:hover {
+      border: 1px solid var(--primary-dark);
+      outline: none
+    }
+  }
+
+  .react-select__multi-value__remove {
+    color: var(--primary) !important;
+    &:hover, &:active {
+      color:var(--danger) !important;
+      background: var(--warm-gray) !important;
+    }
+  }
+
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0,0,0, 0.1);
+  overflow-y: scroll;
+}
+
+
+  .modal {
+    position: fixed;
+    inset: 0; /* inset sets all 4 values (top right bottom left) much like how we set padding, margin etc., */
+    background: rgba(0,0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 999;
+    padding: 40px 20px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.4);
+  }
+
+
+  .modal-enter-done {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+  .modal-exit {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  .modal-content {
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .btn {
+    padding: 9px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    line-height: 24px;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .btn-outline {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background: var(--white);
+    &:hover {
+      color: var(--primary);
+      backgrond: var(--grayscale-bg);
+    }
+  }
+
+
+  .btn-danger {
+    background: var(--danger);
+    color: var(--grayscale-off-white);
+  }
+  .btn-text {
+    background: transparent;
+    border: none;
+  }
+  .btn-success {
+    background: var(--green600);
+    color: var(--grayscale-off-white);
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loading-spinner {
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    border-color: var(--grayscale-warm);
+    border-top-color: var(--primary-dark);
+    border-style: solid;
+    border-width: 16px;
+    &-sm {
+      width: 24px;
+      height: 24px;
+      border-width: 3px;
+    }
+    &-lg {
+      width: 100px;
+      height: 100px;
+      border-color: var(--warm-gray);
+      border-top-color: var(--primary);
+      border-width: 8px;
+      display: inline-block;
+    }
+  }

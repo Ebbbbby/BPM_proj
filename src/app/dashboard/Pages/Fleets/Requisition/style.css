@@ -1,0 +1,14 @@
+ input[type="checkbox"]:checked {
+  border: 1px solid red;
+    background-color: green;
+  }
+  #inputBox{
+    background-color: 1px solid red;
+    
+  }
+  .come{
+    background-color: red;
+  }
+.checkbox{
+  background-color: red;
+}

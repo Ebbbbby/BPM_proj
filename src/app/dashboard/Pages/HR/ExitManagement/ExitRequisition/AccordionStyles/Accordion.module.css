@@ -1,0 +1,24 @@
+.accordion_header{
+ display: flex;
+ justify-content:space-between;
+ margin-bottom: .4rem;
+
+}
+
+
+.toggle{
+cursor: pointer;
+background-color: var(--greenStep_Two);
+padding: 4px 10px;
+font-size: .9rem;
+font-weight: bold;
+color: #fff;
+}
+.accordion_item{
+margin: 1.5rem 0;
+  
+
+}
+.accordion_container{
+    color: var(--primary-color);
+}

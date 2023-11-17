@@ -1,0 +1,5 @@
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+  background-color: var(--primary-color) !important;
+}/*# sourceMappingURL=DatePicker.css.map */

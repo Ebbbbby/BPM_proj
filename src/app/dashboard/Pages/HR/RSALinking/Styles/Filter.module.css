@@ -1,0 +1,130 @@
+.Search {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid var(--table-border);
+    padding: 1rem 0.8rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    background-color: #f8fbf8;   
+    position: relative;
+    width: 95%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .Search * {
+    color: rgba(223, 56, 56, 0.8);
+  
+  }
+  .Container{
+    padding: 10px; 
+    width: 70%;
+   margin: 18% auto
+
+  }
+  .Container h3{
+    
+    text-align: center;
+    color: #305F32;
+  }
+  .Icon {
+    font-size:.1rem;
+    position: absolute;
+    right: 0;
+    background-color: #305F32;
+    border-radius: 0rem 0.7rem 0.7rem 0rem ;
+    z-index: 100;
+    cursor: pointer;
+    /* height: 46px;
+    width: 64px; */
+    margin: 0;
+    font-size: 1rem;
+    padding: 1.6rem 1.6rem;
+   
+    visibility: visible;
+  
+
+  }
+  .Search input {
+    border: none;
+    outline: none;
+    color: #4b664c;
+    background-color: transparent;
+    width: 100%;
+  }
+  .Search input::-moz-placeholder {
+    color: var(--form_input);
+  }
+  .Search input::placeholder {
+    color: var(--form_input);
+   z-index: 1000;
+  }
+  
+  /* .Search_Select {
+    position: relative;
+    overflow-x: unset;
+  }
+  .Search_Select select {
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--form_input);
+    background-color: transparent;
+  }
+  .Search_Select * {
+    color: var(--form_input);
+  }
+  .Search_Select .Search_Menu {
+    position: absolute;
+    top: 2.7rem;
+    left: 0rem;
+    z-index: 10000;
+    overflow-x: unset;
+    background-color: var(--white);
+    padding: 0.75rem;
+    border: 1px solid #d8dce9;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+  }
+  .Search_Select .Search_Menu * {
+    font-size: 0.9rem;
+  }
+  .Search_Select .Search_Menu ul {
+    list-style: none;
+  }
+  .Search_Select .Search_Menu ul li {
+    margin: 0.5rem 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Search {
+      width: 100%;
+    }
+    .Search input {
+      width: 100%;
+    }
+    .Search_Select {
+      position: relative;
+      overflow-x: unset;
+      max-width: unset;
+    }
+    .Search_Select select {
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  } */
+  .rdp {
+    --rdp-cell-size: 40px;
+    --rdp-accent-color: #0000ff;
+    --rdp-background-color: #e7edff;
+    /* Switch to dark colors for dark themes */
+    --rdp-accent-color-dark: #3003e1;
+    --rdp-background-color-dark: #180270;
+    /* Outline border for focused elements */
+    --rdp-outline: 2px solid var(--rdp-accent-color);
+    /* Outline border for focused and selected elements */
+    --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75);
+  }
+  

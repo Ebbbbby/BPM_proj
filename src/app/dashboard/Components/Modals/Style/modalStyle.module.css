@@ -1,0 +1,6 @@
+.processing_stages > * {
+  margin: 1.3rem 0;
+}
+.processing_stages > * > * {
+  margin: 1.3rem 0;
+}/*# sourceMappingURL=modalStyle.module.css.map */

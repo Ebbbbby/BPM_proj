@@ -1,0 +1,72 @@
+.header {
+  padding: 0;
+  border-bottom: 1px solid #d9e9da;
+  position: fixed;
+  width: 100%;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto 80%;
+  grid-template-rows: auto;
+  grid-template-areas: "header actions";
+}
+.header > div {
+  padding: 1rem 0rem;
+}
+
+.header_logo {
+  grid-area: header;
+  border-right: 1px solid #d9e9da;
+}
+.header_logo img {
+  display: block;
+  margin-top: 5px;
+  margin-left: 1rem;
+}
+
+.header_actions {
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem !important;
+}
+
+.header_search {
+  width: 850px;
+  max-width: 100%;
+}
+
+.userInitials {
+  background-color: var(--primary-color);
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+}
+
+.header_bell_icon *, .header_chevron_icon * {
+  font-size: 24px;
+}
+
+.table_more_icons_options {
+  position: absolute;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  min-width: 200px;
+  left: -200px;
+  padding: 0.3rem 1rem;
+  top: 30px;
+}
+
+.table_more_icons_options_button {
+  display: block;
+  color: #4e545f;
+  font-size: 16px;
+  margin: 0.8rem 0;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}/*# sourceMappingURL=Header.module.css.map */

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+}
+.tab{
+    background-color: var(--greenStep_Two);
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid grey;
+    border-top: none;
+    cursor: pointer;
+    position: relative;
+  
+}
+.active-tab{
+    border: none;
+    background-color: #fff;
+    color:var(--greenStep_One); ;
+}
+
+.contents{
+    position: relative;
+}
+.content{
+    display: none;
+    position: relative;
+    
+}
+.active-content{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 1s ease-in-out;
+}
